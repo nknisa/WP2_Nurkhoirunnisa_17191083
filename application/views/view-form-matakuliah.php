@@ -16,15 +16,24 @@
  <th>Kode MTK</th>
  <th>:</th>
  <td>
- <input type="text" name="kode" id="kode">
+ <input type="text" name="kode" id="kode"value="<?php echo set_value('kode'); ?>">
  </td>
  </tr>
  <tr>
+ <td colspan="3" style="color:red;font-size:8px;text-align:center;">
+     <?php echo form_error('kode');?>
+</td>
+</tr>
+<tr>
  <th>Nama MTK</th>
  <td>:</td>
  <td>
- <input type="text" name="nama" id="nama">
+ <input type="text" name="nama" id="nama"value="<?php echo set_value('nama'); ?>">
  </td>
+ </tr>
+ <tr>
+ <td colspan="3" style="color:red;font-size:8px;text-align:center;">
+     <?php echo form_error('kode');?>
  </tr>
  <tr>
  <th>SKS</th>
